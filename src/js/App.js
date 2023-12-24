@@ -1,8 +1,7 @@
 import Widget from './Widget';
-import Controller from './Controller';
 
-const widget = new Widget();
-widget.bindToDOM(document.querySelector('.container'));
+const container = document.querySelector('.container');
 
-const controllerApp = new Controller(widget);
-controllerApp.build();
+const widget = new Widget(container);
+widget.drawUI();
+widget.init();

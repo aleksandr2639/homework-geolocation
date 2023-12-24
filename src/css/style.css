@@ -23,7 +23,7 @@ body{
   flex-direction: column;
 }
 
-.list-message, .textarea-message {
+.list-message, .input-message {
   padding: 15px;
   box-shadow: 8px 8px 20px 1px #00000033;
   border-radius: 15px;
@@ -39,11 +39,11 @@ body{
   background: #8f8fd94d;
 }
 
-.textarea-message, .form{
+.input-message, .form{
   width: 530px;
 }
 
-.textarea-message {
+.input-message {
   margin-top: 5px;
   outline: none;
   resize: vertical;
@@ -65,12 +65,22 @@ body{
   font-size: 12px;
 }
 
-.position {
+.coordinate {
+  display: flex;;
+  align-items: center;
+}
+
+.position-img {
   background-image: url('/src/img/location-dot-solid.svg');
   background-repeat: no-repeat;
-  background-size: 70%;
-  width: 20px;
-  height: 20px;
+  background-size: 60%;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+}
+
+.position {
+  font-size: 12px;
 }
 
 .popup-container{
@@ -112,12 +122,21 @@ label {
 .input{
   padding: 10px;
   border-radius: 10px;
+  outline: none;
   border: none;
 }
 
-.buttons {
+.popup-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 15px;
-  text-align: right;
+}
+
+.error {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a93d3dc9;
 }
 
 button {
